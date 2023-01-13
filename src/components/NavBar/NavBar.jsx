@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import { navitems } from "./NavItems"; //navbar links data
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/Creative.png";
+
 const NavBar = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
   const [scrollNav, setScroolNav] = useState(false);
@@ -20,7 +21,7 @@ const NavBar = () => {
 
   return (
     <div
-      className="navbar backdrop-blur-lg fixed-top text-[#ec008c] font-Roboto font-bold"
+      className="navbar backdrop-blur-lg fixed-top font-Roboto font-bold"
       scrollnav={scrollNav.toString()}
     >
       <div className="navbar-start">
@@ -33,12 +34,12 @@ const NavBar = () => {
           return (
             <Link
               activeClass="active"
-              to='about'
+              to={data.url}
               spy={true}
               smooth="true"
               offset={-70}
               duration={500}
-              className="navbar-item text-lg active:underline"
+              className="px-4 text-lg active:underline text-[#ec008c] hover:cursor-pointer hover:text-green-800"
               key={data.id}
             >
               {data.name}
@@ -52,7 +53,6 @@ const NavBar = () => {
       >
         {isMenuShown ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
-
       {isMenuShown ? (
         <div
           className={`w-full bg-gradient-to-b from-slate-50 te- to-slate-200 shadow-2xl absolute rounded-b-3xl z-10 left-0 h-fit py-5 lg:hidden flex justify-center text-center text-2xl duration-5000 ${
@@ -67,6 +67,7 @@ const NavBar = () => {
                   to={data.url}
                   smooth
                   duration={500}
+                  className=" text-[#ec008c] hover:cursor-pointer hover:text-green-800 "
                 >
                   {data.name}
                 </Link>

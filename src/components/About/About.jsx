@@ -2,12 +2,15 @@ import React, { useEffect } from "react";
 import aboutimage from "../../assets/aboutpage_image.png";
 import { about_paras } from "./About_paras";
 //package for animatin effects on scroll
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../../index.css";
+
+
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1500, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
       easing: "ease", // default easing for AOS animations
     });
   }, []);
@@ -15,7 +18,7 @@ const About = () => {
     <section
       id="about"
       name="about"
-      className="font-Open_Sans  w-full h-auto min-h-full bg-orange-100 mt-2"
+      className="font-Open_Sans bg-orange-100  w-full h-auto min-h-full"
       data-aos="fade-up"
     >
       <div className=" text-center pt-4">
@@ -24,7 +27,7 @@ const About = () => {
         </p>
       </div>
       <div className="flex lg:flex-row flex-col duration-500 w-full lg:px-20 lg:py-10 p-5">
-        <div className="text-lg text-gray-900 font-bold lg:px-14  content-center">
+        <div className="text-lg text-gray-1100 lg:px-14  content-center">
           {about_paras.map((item) => (
             <div key={item.id}>
               <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {item.para}</p>
@@ -32,7 +35,17 @@ const About = () => {
             </div>
           ))}
         </div>
-        <img src={aboutimage} alt="sad" className="lg:max-w-[35%]" />
+        <div className="w-auto h-auto lg:mt-8 p-2 max-h-60 Neomarphism">
+          <iframe
+            src="https://drive.google.com/file/d/1JVU079146_39p582Je36SaZ9y4r_vZgm/preview"
+            className="w-auto h-auto max-h-60 rounded-lg text-black border-2 border-solid border-gray-800 shadow-md "
+            allow="autoplay"
+            allowFullScreen
+          ></iframe>
+          <div className="pt-6 px-2 font-bold text-center text-black">
+            Click on the play button to know about us in a 1 min short video.
+          </div>
+        </div>
       </div>
     </section>
   );

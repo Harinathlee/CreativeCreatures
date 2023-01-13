@@ -3,17 +3,16 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 import bgimage from "../../assets/homepage_image.png";
-
 const Home = () => {
   return (
     <section
       id="home"
       name="home"
-      className="font-Open_Sans w-full h-auto min-h-screen text-center mt-16"
+      className="font-Open_Sans w-full h-auto min-h-screen text-center mt-16 text-gray-1100"
     >
       <div className=" flex lg:flex-row flex-col duration-500 w-full p-8">
         <div className=" justify-center">
-          <p className="text-lg lg:p-6 text-gray-900 font-bold drop-shadow-md">
+          <p className="text-lg lg:p-6 font-bold drop-shadow-md">
             Do you want to impress your Friends/Family with your wedding
             invitation? Then you are at the right place.
           </p>
@@ -23,9 +22,9 @@ const Home = () => {
               Creative Creatures
             </span>
           </h1>
-          <div className="text-lg text-gray-900 font-bold lg:p-6">
+          <div className="text-lg font-bold lg:p-6">
             <p className="mt-2">What are you waiting? It is the new</p>
-            <span className="text-xl text-blue-700">
+            <span className="text-xl text-blue-900">
               <Typewriter
                 options={{
                   strings: ["#Trending", "#Trending"],
@@ -49,7 +48,7 @@ const Home = () => {
             <IoIosArrowDropdown />
           </button>
         </div>
-        <img src={bgimage} alt="sad" className="relative top-0 flex" />
+        <img src={bgimage} alt="sad" className="relative top-0 flex lg:w-[50%] lg:h-[70%] max-w-screen" />
       </div>
       <div
         name="quote"
@@ -58,7 +57,7 @@ const Home = () => {
         <figure className="mx-auto max-w-screen-md text-center">
           <svg
             aria-hidden="true"
-            className="mx-auto mb-2 w-5 h-5 text-gray-900"
+            className="mx-auto mb-2 w-5 h-5 "
             viewBox="0 0 24 27"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -69,16 +68,16 @@ const Home = () => {
             />
           </svg>
           <blockquote>
-            <p className="italic font-medium text-gray-800">
+            <p className="italic font-medium text-gray-1100">
               "Satisfaction First,Settlement Next."
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3 ">
-            <div className="flex items-center divide-x-2 divide-gray-800 font-Roboto">
-              <cite className="pr-3 text-orange-500 font-signature font-bold">
+            <div className="flex items-center divide-x-2 divide-gray-800 font-Roboto text-xl">
+              <cite className="pr-3 text-orange-600 font-Rowdies font-bold">
                 harinathlee
               </cite>
-              <cite className="pl-3 text-sm text-sky-500 font-Open_Sans">
+              <cite className="pl-3 text-sm text-green-900 font-bold font-Open_Sans">
                 Founder
               </cite>
             </div>

@@ -2,14 +2,8 @@ export const navitems = [
  
   {
     id: 2,
-    name: "AboutUS",
+    name: "AboutUs",
     url: "about",
-    active: false,
-  },
-  {
-    id: 3,
-    name: "Services",
-    url: "services",
     active: false,
   },
   {
@@ -18,10 +12,9 @@ export const navitems = [
     url: "ourwork",
     active: false,
   },
-
   {
     id: 5,
-    name: "WhyUS",
+    name: "WhyUs",
     url: "whyus",
     active: false,
   },

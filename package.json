@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.1.4",
     "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -17,6 +18,7 @@
     "react-scroll": "^1.8.9",
     "rippleui": "^1.4.0",
     "sass": "^1.57.1",
+    "swiper": "^8.4.5",
     "tw-elements": "^1.0.0-alpha13",
     "typewriter-effect": "^2.19.0"
   },

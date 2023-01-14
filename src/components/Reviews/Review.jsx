@@ -15,6 +15,8 @@ import img from "../../assets/man.png";
 //package for animatin effects on scroll
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import "../../index.css"
 const Reviews = () => {
    useEffect(() => {
     AOS.init({
@@ -51,8 +53,8 @@ const Reviews = () => {
             className="mySwiper"
           >
             {reviews.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
-                <div className="flex items-center justify-center text-center flex-col px-20 pb-10 pt-4 w-full h-auto lg:max-h-[500px] rounded-3xl">
+              <SwiperSlide key={testimonial.id} className="">
+                <div className="flex items-center justify-center text-center flex-col px-20 pb-10 pt-4 w-full h-auto lg:max-h-[500px] Neomarphism">
                   <div className="avatar avatar-ring-primary avatar-lg">
                     <img src={img} alt="avatar" />
                   </div>

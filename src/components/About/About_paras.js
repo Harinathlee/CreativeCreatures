@@ -1,14 +1,14 @@
 export const about_paras = [
   {
     id: 1,
-    para: "We create trending wedding invitaion videos/E-card for you to send it to your Friends/Family on Whatsapp which grabs you more attention than sending a regular boring picture of invitation card.",
+    para: "We create trending wedding invitation videos/E-cards for you to send to your friends/family Online, which captures your attention more than sending a standard dull photo of an invitation card.",
   },
   {
     id: 2,
-    para: "We currently provide videos/E-cards in Telugu and English language fonts with a nice background music/song to make video experience even better. You can choose the language and song if there is a prefered one for you or don't worry else we will choose a good marriage themed song/music.",
+    para: "We presently provide videos/e-cards in Telugu and English language fonts, each with a great background music/song to enhance the video experience. You can select the language and song if you have a preference, or we will find an appropriate marriage themed song/music for you.",
   },
   {
     id: 3,
-    para: "Please do have a look at our previous work(videos) and decide yourself to move forward with us or not. We hope you like our work and will be our valuable customer.",
+    para: "Please review our prior work and decide whether or not to engage with us. We hope you appreciate our work and become a loyal customer.",
   },
 ];

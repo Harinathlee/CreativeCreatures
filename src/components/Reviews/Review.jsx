@@ -16,7 +16,6 @@ import img from "../../assets/man.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import "../../index.css"
 const Reviews = () => {
    useEffect(() => {
     AOS.init({
@@ -53,8 +52,8 @@ const Reviews = () => {
             className="mySwiper"
           >
             {reviews.map((testimonial) => (
-              <SwiperSlide key={testimonial.id} className="">
-                <div className="flex items-center justify-center text-center flex-col px-20 pb-10 pt-4 w-full h-auto lg:max-h-[500px] Neomarphism">
+              <SwiperSlide key={testimonial.id}>
+                <div className="flex items-center justify-center text-center flex-col px-20 pb-10 pt-4 w-full h-auto lg:max-h-[500px]">
                   <div className="avatar avatar-ring-primary avatar-lg">
                     <img src={img} alt="avatar" />
                   </div>

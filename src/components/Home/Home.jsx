@@ -74,8 +74,8 @@ const Home = () => {
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3 ">
             <div className="flex items-center divide-x-2 divide-gray-800 font-Roboto text-xl">
-              <cite className="pr-3 text-orange-600 font-Rowdies font-bold">
-                harinathlee
+              <cite className="pr-3 text-orange-600 font-Rowdsies font-bold">
+                HarinathLee
               </cite>
               <cite className="pl-3 text-sm text-green-900 font-bold font-Open_Sans">
                 Founder
